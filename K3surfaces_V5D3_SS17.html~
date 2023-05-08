@@ -1,0 +1,263 @@
+<!doctype html>
+<link rel="stylesheet" href="stylesheet.css">
+
+<h1> V5D3 - Advanced Topics in Geometry - Introduction to K3 surfaces, Summer semester 2017</h1>
+
+<p><strong>Lecturer:</strong> Dr. Andrey Soldatenkov<br>
+</p>
+
+<h3>Announcement</h3>
+<p class="justify"> Classification of complex algebraic surfaces is a classical chapter of algebraic geometry
+which was essentially completed by the Italian school in the beginning of the previous century.
+Surfaces with trivial canonical bundle occupy a special place in this classification.
+There are two types of such surfaces: abelian surfaces and K3 surfaces.
+Abelian surfaces may be viewed as a straightforward two-dimensional analogue of elliptic curves.
+On the other hand, K3 surfaces present a new class of algebraic varieties with its own unique features.
+Several decades of study showed that the theory of K3 surfaces is remarkably rich and deep.
+We will start from a general introduction to the theory of algebraic surfaces, and
+then pass to the study of complex K3 surfaces. We will focus on the Hodge-theoretic
+and differential-geometric parts of the theory leading to the proof of global Torelli theorem.
+</p>
+
+<p class="justify">
+<strong>Prerequisites.</strong>
+Basic knowledge of algebraic geometry (for example chapters II and III of [Ha]).
+Familiarity with intersection theory [Fu] may be useful, but not necessary.
+</p>
+
+
+<h3>Lectures</h3>
+
+<p>Tuesday 10:15-12:00, Friday 10:15-12:00, room 1.008, Endenicher Allee 60
+</p>
+
+<p>
+<a href="K3surfaces.pdf">Some notes for the first 16 lectures.</a>
+</p>
+
+<div class="justify">
+
+<p><strong>Lecture 1.</strong>
+Definition of algebraic K3 surfaces. Examples: complete intersections, ramified coverings,
+Kummer surfaces. General introduction to complex surfaces: line bundles and divisors,
+intersection form, numerical equivalence of divisors.
+</p>
+
+<p><strong>Lecture 2.</strong>
+Hodge index theorem, Nakai-Moishezon ampleness criterion. Hodge numbers of a K3 surface.
+Definition of the positive, effective, ample and nef cones.
+</p>
+
+<p><strong>Lecture 3.</strong>
+Natural inclusions between the ample, nef and positive cones. Examples: a quadric, the
+blow-up of projective plane in a point, an abelian surface. Birational transformations of surfaces.
+Vanishing of higher direct images of the structure sheaf under blow-ups. 
+</p>
+
+<p><strong>Lecture 4.</strong>
+Any birational morphism of non-singular projective surfaces is a composition of blow-ups
+of points. Resolving birational maps. Contracting (-1)-curves (Castelnuovo's theorem).
+Definition of minimal models, their properties. Birational K3 surfaces are isomorphic.
+</p>
+
+<p><strong>Lecture 5.</strong>
+Extremal rays of the Mori cone. Finding an extremal ray when the canonical bundle is not nef.
+Contracting extremal rays. Canonical ring of a surface, its birational invariance. Definition of
+Kodaira dimension. Classifying surfaces by their Kodaira dimension.
+</p>
+
+<p><strong>Lecture 6.</strong>
+Complex analytic spaces and Serre's GAGA principle. Introduction to Hodge theory: complex
+manifolds, de Rham algebra, K&auml;hler metrics, Laplacians. Sketch of the proof of
+Hodge theorem, Hodge decomposition of cohomology.
+</p>
+
+<p><strong>Lecture 7.</strong>
+&part;<span style="text-decoration: overline">&part;</span>-lemma, independence of Hodge decomposition
+on the choice of a metric. Lefschetz decomposition, Hodge-Riemann bilinear relations: the case of K&auml;hler
+surfaces. Definition of a complex K3 surface, its integral cohomology.
+</p>
+
+<p><strong>Lecture 8.</strong>
+Short introduction to lattices, uniqueness of indefinite even unimodular lattice of given signature.
+Second cohomology of a K3 surface, the K3 lattice. Hodge structures: definition, main examples;
+statement of the Torelli theorem for K3 surfaces. Lefschetz theorem on (1,1)-classes.
+</p>
+
+<p><strong>Lecture 9.</strong>
+Deformations of complex manifolds. Universal and versal deformations, statement of Kuranishi's theorem.
+The tangent space of the versal deformation is isomorphic to H<sup>1</sup>(X,T<sub>X</sub>). Kodaira-Spencer map, its interpretation
+via square-zero extensions. Smoothness of the base of the universal
+deformation in the case when H<sup>2</sup>(X,T<sub>X</sub>) = 0.
+</p>
+
+<p><strong>Lecture 10.</strong>
+Digression about spectral sequences: spectral sequence of a filtered complex and of a double complex,
+Cartan-Eilenberg resolution. Hodge to de Rham spectral sequence degenerates at E<sub>1</sub>.
+</p>
+
+<p><strong>Lecture 11.</strong>
+Deligne's theorem: relative Hodge to de Rham spectral sequence degenerates at E<sub>1</sub> and
+induces a filtration by locally free sheaves (Hodge filtration). Variations of Hodge
+structures, Gauss-Manin connection. Statement of Griffiths transversality. The case of K3 surfaces:
+the period domain, differential of the period map; local Torelli theorem.
+</p>
+
+<p><strong>Lecture 12.</strong>
+Moduli space of marked K3 surfaces, global period map. Brief overview of differential
+geometry related to hyperk&auml;hler metrics: Levi-Civita connection, holonomy groups
+and holonomy principle; holonomy of a K&auml;hler manifold is contained in the unitary
+group; Calabi-Yau theorem for K&auml;hler manifolds with trivial canonical bundle implies
+that holonomy group is contained in SU(n). The group SU(2), existence of hyperk&auml;hler structures
+on K3 surfaces.
+</p>
+
+<p><strong>Lecture 13.</strong>
+Twistor space: definition, integrability of the complex structure. Twistor lines in
+the moduli space and in the period domain. Any two points in the period domain
+can be connected by a sequence of generic twistor lines.
+</p>
+
+<p><strong>Lecture 14.</strong>
+Statement of Demailly-P&#259;un theorem; description of the K&auml;hler cone of a K3 surface
+with trivial Picard group. Lifting of twistor lines to the moduli space. Surjectivity
+of the global period map. Non-separated points in the moduli space: theorem of Burns-Rapoport.
+</p>
+
+<p><strong>Lecture 15.</strong>
+Hausdorff reduction of the moduli space: definition of the equivalence relation,
+the moduli space becomes a Hausdorff manifold after reduction, the period map stays
+a local isomorphism. Browder's criterion for a local isomorphism to be a covering.
+After the Hausdorff reduction the period map becomes a covering.
+</p>
+
+<p><strong>Lecture 16.</strong>
+Connected components of the moduli space. All K3 surfaces are deformation
+equivalent. Action of the ortogonal group; the subgroup of index two generated
+by reflections along (-2)-vectors. Every such reflection can be realized as
+a monodromy operator. The moduli space has two connected components; end of
+the proof of global Torelli theorem.
+</p>
+
+<p><strong>Lecture 17.</strong>
+Introduction to derived categories of coherent sheaves on projective varieties.
+Triangulated categories: definition and basic properties. Categories of complexes.
+Triagulated structure on the homotopy category of complexes.
+</p>
+
+<p><strong>Lecture 18.</strong>
+Distinguished triangles in the homotopy category of complexes. Localization
+of triangulated categories: description of the localization when the
+class of morphisms satisfies Ore conditions. Quotient of a triangulated
+category by a full triangulated subcategory. Derived category of an abelian
+category.
+</p>
+
+<p><strong>Lecture 19.</strong>
+Constructing derived functors of left/right exact functors between
+abelian categories. For an abelian category with enough injective objects
+the derived category is equivalent to the homotopy category of complexes
+of injective objects. Standard derived functors for the derived categories
+of coherent sheaves on non-singular projective varieties, relations between
+them.
+</p>
+
+<p><strong>Lecture 20.</strong>
+Serre duality and Serre functors in triangulated categories. Serre functors
+commute with exact equivalences. Reconstructing a variety with (anti)ample
+canonical bundle from its derived category: point-like objects, invertible
+objects, derived category determines the canonical ring of a variety.
+</p>
+
+<p><strong>Lecture 21.</strong>
+Derived category of the projective space. Semiorthogonal decompositions.
+Derived category does not admit a semiorthogonal decomposition if the
+canonical bundle is trivial. Fourier-Mukai (FM) functors: definition and the
+statement of Orlov's theorem.
+</p>
+
+<p><strong>Lecture 22.</strong>
+Grothendieck group of an essentially small triangulated category. Action of
+FM functors on the Grothendieck group and on cohomology. Mukai vectors;
+FM functors respect Mukai pairing.
+</p>
+
+<p><strong>Lecture 23.</strong>
+Derived equivalences respect Mukai pairing: an application - derived equivalent
+elliptic curves are isomorphic. Mukai pairing and cohomological FM transforms
+for K3 surfaces: Hodge structure on the cohomology ring, Mukai vector of an FM kernel
+is integral, hence any FM equivalence induces an integral Hodge isometry.
+Examples of FM equivalences; spherical twists. Spanning classes and a criterion for
+an exact functor to be fully faithful.
+</p>
+
+<p><strong>Lecture 24.</strong>
+Criterion for an exact fully faithful functor to be an equivalence. Spherical twists
+are equivalences. Action of spherical twists on the cohomology of a K3 surface.
+Outline of the proof of derived Torelli theorem assuming the existence of moduli
+spaces of sheaves with given Mukai vector.
+</p>
+
+<p><strong>Lecture 25.</strong>
+Digression: moduli spaces of sheaves on algebraic varieties: Gieseker semistable and
+stable sheaves, moduli functors, their corepresentability. Quasi-universal families,
+statement of some sufficient conditions for the existence of universal families.
+The case of K3 surfaces.
+</p>
+
+<p><strong>Lecture 26.</strong>
+The tangent space of the moduli space of sheaves at a point [E] is Ext<sup>1</sup>(E,E).
+Moduli spaces of stable sheaves with isotropic Mukai vector: the FM transform induced
+by the universal family is an equivalence. Reformulating derived Torelli theorem in
+terms of the transcendental lattice: Nikulin's theorem about primitive embeddings of lattices.
+</p>
+
+<p><strong>Lecture 27.</strong>
+Action of automorphisms on the cohomology of K3 surfaces. Any Hodge isometry preserving
+the K&auml;hler cone is induced by an automorphism. Symplectic automorphisms of finite order;
+an automorphism that acts trivially on cohomology is the identity. Action of diffeomorphisms
+on cohomology, open questions related to the kernel of this action. Action of autoequivalences
+of the derived category on the Mukai lattice: theorem of Huybrechts-Macr&igrave;-Stellari, Bridgeland's conjecture.
+</p>
+
+</div>
+
+<p style="font-size:30px">&#9749;&#9749;&#9749;</p>
+
+<p>
+<strong>Literature:</strong>
+<ul>
+<li> Main references about algebraic surfaces
+
+<br>
+<p>[H1] D. Huybrechts, ``Lectures on K3 surfaces''. Cambridge University Press, 2016.</p>
+<p>[IS] V. Iskovskikh, I. Shafarevich, ``Algebraic surfaces'', Algebraic geometry II, Encyclopaedia Math. Sci., 35, Springer, 1996.</p>
+<p>[Be] A. Beauville, ``Complex algebraic surfaces''. Cambridge University Press, 1983.</p>
+<p>[BHPV] W. Barth, K. Hulek, S. Peters, A. Van de Ven, ``Compact complex surfaces'', Second edition,
+Springer-Verlag, 2004.</p>
+<p>[Ba] L. B&#259;descu, ``Algebraic surfaces''. Springer-Verlag, 2001
+
+<li> Complex geometry
+<br>
+<p>[H2] D. Huybrechts, ``Complex Geometry'', Springer, 2005.</p>
+<p>[D] J.-P. Demailly, ``Complex analytic and differential geometry'',
+   <a href="https://www-fourier.ujf-grenoble.fr/~demailly/manuscripts/agbook.pdf">available online.</a>
+<p>[GH] P. Griffiths, J. Harris, ``Principles of algebraic geometry'', John Wiley & Sons, 1978.</p>
+
+<li> Hodge theory
+<br>
+<p>[V] C. Voisin ``Hodge theory and complex algebraic geometry I, II'', Cambridge University Press, 2007</p>
+<p>[CMP] J. Carlson, S. M&uuml;ller-Stach, C. Peters, ``Period mappings and period domains'', Cambridge University Press, 2003.</p>
+
+<li> Other useful books
+
+<br>
+<p>[Ha] R. Hartshorne, ``Algebraic geometry''. Springer-Verlag, 1977.</p>
+<p>[Fu] W. Fulton, ``Interesection theory''. Springer-Verlag, 1998.</p>
+</ul>
+</p>
+
+<!--<h3>Exams</h3>
+
+<h3>Other</h3>-->
+
