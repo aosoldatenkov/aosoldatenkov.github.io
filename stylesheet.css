@@ -7,7 +7,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
-  font-variant-ligatures: common-ligatures discretionary-ligatures contextual;
+  font-variant-ligatures: normal;
   border: 1px solid #ccc
 }
 
@@ -76,4 +76,8 @@ th, td {
 
 .justify {
  text-align: justify;
+}
+
+.title-picture {
+width: 25em;
 }
