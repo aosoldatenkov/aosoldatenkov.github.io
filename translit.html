@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Transliteration</title>
+</head>
+<body>
+    <h2>Text Transliteration <input id="mode" onclick="chmod()" type="button" value="EN-RU"></input></h2>
+    <textarea id="inputText" rows="20" cols="108" placeholder="Enter text..."></textarea>
+    <br><br>
+    <textarea id="outputText" rows="20" cols="108" readonly></textarea>
+    <br>
+    <button onclick="copy()">Copy</button>
+
+    <script>
+        const templ_en_ru = /C[hz]?|c[hz]?|E`|e`|Ey+a?|ey+a?|J`?[aou]?|j`?[aou]?|Kh?|kh?|Ph?|ph?|S`?c?h+|s`?c?h+|Y[au]?|y[au]?|Z`?h?|z`?h?|\w|\W/g;
+
+        const en_ru = {
+            'A': 'А', 'a': 'а', 'B': 'Б', 'b': 'б',
+            'C': 'Ц', 'c': 'ц', 'Cz': 'Ц', 'cz': 'ц',
+            'Ch': 'Ч', 'ch': 'ч', 'D': 'Д', 'd': 'д',
+            'E': 'Е', 'e': 'е', 'Ey': 'Ей', 'ey': 'ей', 'F': 'Ф', 'f': 'ф',
+            'G': 'Г', 'g': 'г', 'H': 'Х', 'h': 'х',
+            'I': 'И', 'i': 'и', 'Eya': 'Ея', 'eya': 'ея',
+            'Ea': 'Еа', 'ea': 'еа', 'J': 'Й', 'j': 'й',
+            'Ja': 'Я', 'ja': 'я', 'Jo': 'Ё', 'jo': 'ё',
+            'Ju': 'Ю', 'ju': 'ю', 'K': 'К', 'k': 'к',
+            'Kh': 'Х', 'kh': 'х', 'L': 'Л', 'l': 'л',
+            'M': 'М', 'm': 'м', 'N': 'Н', 'n': 'н',
+            'O': 'О', 'o': 'о', 'P': 'П', 'p': 'п',
+            'Ph': 'Ф', 'ph': 'ф', 'Q': 'К', 'q': 'к', 'R': 'Р', 'r': 'р',
+            'S': 'С', 's': 'с', 'Sh': 'Ш', 'sh': 'ш',
+            'Sch': 'Щ', 'sch': 'щ', 'T': 'Т', 't': 'т',
+            'U': 'У', 'u': 'у', 'V': 'В', 'v': 'в', 'W': 'В', 'w': 'в',
+            'X': 'Х', 'x': 'х', 'Y': 'Ы', 'y': 'ы',
+            'Ya': 'Я', 'ya': 'я', 'Yu': 'Ю', 'yu': 'ю',
+            'Z': 'З', 'z': 'з', 'Zh': 'Ж', 'zh': 'ж',
+            'E`': 'Э', 'e`': 'э', '`': 'ъ', "'": 'ь',
+            'J`a': 'Йа', 'j`a': 'йа', 'J`o': 'Йо', 'j`o': 'йо',
+            'J`u': 'Йу', 'j`u': 'йу', 'S`h': 'Сх', 's`h': 'сх',
+            'S`ch': 'Сч', 's`ch': 'сч', 'Z`h': 'Зх', 'z`h': 'зх'
+        };
+
+        const templ_ru_en = /Ей|ей|Йа|йа|Йо|йо|Йу|йу|Сх|сх|Сч|сч|Зх|зх|\w|\W/g; 
+
+        const ru_en = {
+            'А': 'A', 'а': 'a', 'Б': 'B', 'б': 'b', 'Ц': 'Cz', 'ц': 'cz',
+            'Ч': 'Ch', 'ч': 'ch', 'Д': 'D', 'д': 'd', 'Е': 'E', 'е': 'e',
+            'Ей': 'Ey', 'ей': 'ey', 'Ф': 'F', 'ф': 'f',
+            'Г': 'G', 'г': 'g', 'Х': 'H', 'х': 'h', 'И': 'I', 'и': 'i',
+            'Й': 'J', 'й': 'j', 'Йа': 'J`a', 'йа': 'j`a', 'Йо': 'J`o', 'йо': 'j`o',
+            'Йу': 'J`u', 'йу': 'j`u', 'Я': 'Ya', 'я': 'ya', 'Ё': 'Jo', 'ё': 'jo',
+            'Ю': 'Yu', 'ю': 'yu', 'К': 'K', 'к': 'k', 'Л': 'L', 'л': 'l',
+            'М': 'M', 'м': 'm', 'Н': 'N', 'н': 'n', 'О': 'O', 'о': 'o',
+            'П': 'P', 'п': 'p', 'Р': 'R', 'р': 'r', 'С': 'S', 'с': 's',
+            'Сх': 'S`h', 'сх': 's`h', 'Сч': 'S`ch', 'сч': 's`ch',
+            'Ш': 'Sh', 'ш': 'sh', 'Щ': 'Sch', 'щ': 'sch', 'Т': 'T', 'т': 't',
+            'У': 'U', 'у': 'u', 'В': 'V', 'в': 'v', 'Ы': 'Y', 'ы': 'y',
+            'З': 'Z', 'з': 'z', 'Зх': 'Z`h', 'зх': 'z`h', 'Ж': 'Zh', 'ж': 'zh',
+            'Э': "E`", 'э': "e`", 'ъ': '`', 'ь': "'"
+        };
+
+        function transliterate() {
+            const input = document.getElementById('inputText').value;
+            v = document.getElementById('mode').value;
+            template = (v == 'EN-RU') ? templ_en_ru : templ_ru_en
+            trans = (v == 'EN-RU') ? en_ru : ru_en
+            const result = input.match(template)?.map(x => trans[x] || x).join('') || '';
+            document.getElementById('outputText').value = result;
+        };
+
+        function copy() {
+            navigator.clipboard.writeText(document.getElementById('outputText').value);
+        };
+
+        function chmod() {
+            v = document.getElementById('mode').value;
+            document.getElementById('mode').value = (v == 'EN-RU') ? 'RU-EN' : 'EN-RU';
+            transliterate(); 
+        };
+
+        document.getElementById('inputText').addEventListener('input', transliterate);
+    </script>
+</body>
+</html>

@@ -11,6 +11,14 @@ body {
   border: 1px solid #ccc
 }
 
+textarea {
+  border: 1px solid #ccc;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  resize: none;
+}
+
 h1 {
   font-size: 1.4em;
   border-bottom: 2px solid #ccc;
